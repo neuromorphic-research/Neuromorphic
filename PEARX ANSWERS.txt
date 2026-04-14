@@ -1,0 +1,245 @@
+﻿PearX S26 Application Form
+PearX is our exclusive, small batch accelerator program for pre-seed companies. → Read more about the program at pear.vc/pearx.
+💰 PearX teams receive between $250k to $2m in funding.
+📨 The early application deadline is Feb 22nd at 11:59 PM PST. Early apps can expect a decision by the end of March.
+📅 The regular application deadline is Apr 12th at 11:59 PM PST. Regular apps can expect a decision by the end of May.
+For teams invited to interview, we host 2 rounds of interviews.
+* R1 interviews are 10 mins and are conducted over Zoom.
+* R2 interviews are 20 mins in-person at Pear Studio SF with at least two Pear partners.
+The cohort will officially kick off in July and run for 12 weeks, with Demo Day scheduled for the first week of October.
+Basic Info ℹ️
+Company name
+*
+Company website URL
+Headquarters country
+*
+USA
+Headquarters city
+*
+How much funding have you raised to date?
+*
+Use the format "$xx amount Investor 1, $yy Investor 2, etc". If you haven't raised please just enter "0".
+🏗️ Industry: Primary
+*
+* B2B
+* Biotech
+* Consumer
+* Deep Tech
+* Education
+* Fintech
+* Government
+* Healthcare
+* Real Estate & Property Tech
+Clear selection
+Industry Subcategory: Deep Tech
+*
+* Climate
+* Drones
+* Energy & Cleantech
+* Space & Aviation
+* Automotive
+* Robotics
+* Semiconductors
+* Industrials & Manufacturing
+* Quantum
+* Advanced Materials
+* Other
+Clear selection
+The Pitch 🎙️
+One-line description of the company
+*
+Pitch your startup in one sentence.
+Please record a 1-min video introducing yourselves and the company
+*
+Please submit a link to an unlisted YouTube video.
+Product demo video URL
+Please submit a link to an unlisted YouTube video.
+Submit your pitch deck in PDF format
+Drop files here or browse
+The Problem 🤔
+What are you building, and why?
+*
+We are building easy-to-integrate camera systems that run vision-language models in real time, allowing robots to understand what they see. Instead of treating cameras as passive sensors, we turn them into semantic perception modules that can identify objects, interpret scenes, and provide actionable context directly to robotic systems.
+
+
+We are building this because robotics still struggles with perception in unstructured real-world environments. Traditional vision systems are often brittle, narrow, and expensive to adapt for each use case. By making real-time semantic understanding plug-and-play, we help robotics companies deploy smarter systems faster, with less integration overhead and far more flexibility.
+
+
+What unique insight do you have into this problem?
+*
+The core insight is that robot autonomy is often limited not by motion or control, but by the lack of deployable semantic understanding under real-world compute and integration constraints. We know this because we have shipped and deployed these systems ourselves, and today there is still no plug-and-play product that works reliably enough in production. As a result, many robots still fall back to teleoperation or heavy human oversight, and we are building the missing perception layer to close that gap.
+Traction 📈
+How far along are you?
+*
+How many customer interviews have you done? Do you have a live product?
+We currently have a custom distilled VLM that reaches up to 300 ms latency, we aim for sub 200ms to comply with real-time requirements. A plug-and-play UI for the camera. 3D printed the casing and the form factor of the camera. Also we have designed and sent our v0 custom PCB to production that is compatible with any Jetson Orin Compute module. This new hardware allows us to package the whole cortex to a small footprint.
+Do you have people using your product?
+* Yes
+* No
+Clear selection
+Do you have revenue?
+* Yes
+* No
+Clear selection
+Competition and Market 🏇
+Who are your competitors? How do you differentiate from them?
+*
+Our closest alternatives are depth and edge-AI camera platforms like Stereolabs ZED, RealSense, and Luxonis OAK. Those products are built around stereo/depth perception, spatial awareness, or general on-device vision inference, but robotics teams still have to build and maintain their own semantic understanding stack on top of them.
+
+
+We differentiate by making semantic understanding itself the product: a plug-and-play camera module that runs real-time VLM perception for robots under real deployment compute constraints. Instead of giving teams raw visual data plus integration work, we give them actionable context directly, with far less perception engineering overhead
+How big is the market opportunity? Provide a bottoms-up calculation of how you estimated the market size.
+*
+Our bottom-up market estimate starts with annual robot deployments: roughly 742k new robots are deployed per year globally across industrial and professional service categories. We assume semantic perception is required for the subset operating in dynamic or unstructured environments—about 35% of industrial robots and 60% of service/mobile robots—yielding ~309k addressable robots annually. At an average of 1.6 perception modules per robot, that corresponds to ~495k modules per year; with a blended ASP of ~$2.5k per module plus ~$1.2k in annual software/support, this represents an initial annual revenue opportunity of roughly $1.8B. Beyond this base market, we expect to expand adoption further by lowering integration cost, deployment time, and model-tuning overhead, which makes semantic perception viable for a broader set of robotics OEMs and applications.
+The Founders 👏
+How many founders do you have?
+* 1
+* 2
+* 3
+* 4
+Clear selection
+How long have you been working on this company?
+*
+* <6 months
+* 6 months - 1 year
+* > 1 year
+Clear selection
+What is the equity split among the founders?
+*
+Please list in this format:
+[Founder 1: xx%, Founder 2: yy%, etc.]
+CEO / Founder #1
+If the CEO title has not been defined, don't overthink it and just pick a person.
+Full name
+*
+LinkedIn URL
+*
+Email
+*
+Phone number
+Are you currently working on this startup full-time or part-time?
+*
+* Full-time
+* Part-time
+Clear selection
+Are you currently a student?
+*
+* Yes
+* No
+Clear selection
+College / University
+*
+Current degree program:
+*
+Bachelor's Degree
+Please share an example of a time you tackled a problem in a novel way and achieved something truly impressive.
+*
+Compressing neural networks usually means forcing a small "student" model to perfectly mimic the internal activations of a massive "teacher" model, which inevitably degrades performance. I realized we were optimizing the wrong thing: a student doesn't need to copy everything, just the features that actually impact the final output. I developed a framework around this called NSA-Net. Instead of enforcing an exact match, we mathematically projected the mismatch between the models directly into the "null space" of the teacher's layers. Any discrepancies were safely absorbed where they couldn't affect the network's flow, forcing the student to strictly learn task-relevant directions. It decreased parameter counts by up to 90% and computation by 80%. Because this null-space projection acted as a powerful regularizer, our highly compressed models actually outperformed their massive teachers on benchmarks like CIFAR-10, and our paper was published at APSIPA ASC 2025. The core insight was weaponizing a network's mathematical blind spots to selectively filter out noise rather than fighting to perfectly replicate it.
+We are looking for outlier founders. What makes you an outlier?
+*
+Resource constraints make me an outlier. Constraints pushed my creativity and problem solving skills to be frontier. A single opportunity where I left my home-town to a conference at Google led me to win T5 hackathons, be a part of a community of worldwide founders.  Navigating constraints pushed my curiosity to develop research that created efficient AI models and SOTA performing robot policies that can run with a CPU. My relentlessness and determination is the foundation of me being an outlier.
+Founder #2
+Full name
+*
+LinkedIn URL
+*
+Email
+*
+Phone number
+Are you currently working on this startup full-time or part-time?
+*
+* Full-time
+* Part-time
+Clear selection
+Are you currently a student?
+*
+* Yes
+* No
+Clear selection
+College / University
+*
+Current degree program:
+*
+Bachelor's Degree
+Please share an example of a time you tackled a problem in a novel way and achieved something truly impressive.
+*
+I developed a static calibration algorithm for industrial robots, which achieved 30 percent higher precision than the existing alternatives.  I modelled the robotic arm as a stochastic process and used Hamiltonian Monte Carlo and sensor fusion to improve its precision. Furthermore, I created a program that can create smart trajectories for polishing by minimising dynamic errors of robotic arms and used Evolutionary Optimisation and Ergodic Optimisation methods. I wrote 2 papers on this project and collaborated with 2 robotic companies.
+We are looking for outlier founders. What makes you an outlier?
+*
+I’m an outlier because I have unusual technical range and I ship fast. I built a robot-arm calibration method using Hamiltonian Monte Carlo and a digital twin that beat FANUC’s precision by 30%, led a championship-winning robotics team, built smart bike locks that won funding, and sold an LLM routing API to developers. I move comfortably across robotics, hardware, AI, and software, and I do not just explore ideas, I have built and worked on startups in the past as well as a being part of the Cambridge021 accelerator 2026 batch.
+Founder #3
+Full name
+*
+LinkedIn URL
+*
+Email
+*
+Phone number
+Are you currently working on this startup full-time or part-time?
+*
+* Full-time
+* Part-time
+Clear selection
+Are you currently a student?
+*
+* Yes
+* No
+Clear selection
+College / University
+*
+Current degree program:
+*
+Doctoral Degree
+Please share an example of a time you tackled a problem in a novel way and achieved something truly impressive.
+*
+I once built the hardware for and ran an unlicensed broadcast station mainly so I could listen to my own vintage magnetic tapes wherever I wanted on a regular radio. After that worked, I started wondering what else I could get away with and tried using it as a data channel too, basically as a very dumb storage system. That part was not practical because the bitrate was terrible, but it was still fun to push on the idea. The interesting part for me was realizing that the real limit was not the hardware it was the fact that at some point you run into regulation.
+We are looking for outlier founders. What makes you an outlier?
+*
+I am an outlier because I bridge the gap between abstract information theory and silicon-level implementation. While most founders build on top of existing abstractions, I am comfortable rewriting the abstractions themselves.
+My work involves using symmetries to optimize Transformer architectures and deriving new capacity bounds for the deletion channel. I don't just 'use' AI; I apply formal verification via Lean 4 and hardware-software codesign on FPGAs to build systems that are mathematically more efficient and physically faster than the industry standard. I have the technical depth to out-research incumbents and the 'builder's itch' to ship 100k-parameter models on custom hardware.
+Founder #4
+Full name
+*
+LinkedIn URL
+*
+Email
+*
+Phone number
+Are you currently working on this startup full-time or part-time?
+*
+* Full-time
+* Part-time
+Clear selection
+Are you currently a student?
+*
+* Yes
+* No
+Clear selection
+Please share an example of a time you tackled a problem in a novel way and achieved something truly impressive.
+*
+Hacked access card during my internship at a defence company and accessed and saw secret military projects out of curiosity.
+We are looking for outlier founders. What makes you an outlier?
+*
+Actually deployed thousands of robots at scale and in a 7/24 production environment.
+I maintain and write open source libraries that people actually use.
+Pear 🍐
+Have you applied to PearX before?
+*
+* Yes
+* No
+Clear selection
+How did you first hear about PearX?
+*
+* Pear Employee
+* Pear Community
+* Pear Founder
+* Pear Fellow
+* Pear Event
+* Friend
+* Email list
+* X / Twitter
+* LinkedIn
+* Google / ChatGPT / Claude / Perplexity, etc.
+* Other
+Clear selection
+Please review your application before submitting.
