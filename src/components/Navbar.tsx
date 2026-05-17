@@ -1,5 +1,6 @@
 const links = [
   { href: "#story", label: "Our Story" },
+  { href: "/demo", label: "Demo" },
   { href: "#insights", label: "Insights" },
   { href: "#contact", label: "Contact" },
 ] as const;
@@ -12,7 +13,7 @@ export function Navbar() {
         aria-label="Primary"
       >
         <a
-          href="#top"
+          href="/#top"
           className="group rounded-md py-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-neu-200 active:opacity-90"
         >
           <span
