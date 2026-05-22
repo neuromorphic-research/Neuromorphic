@@ -24,7 +24,7 @@ export function DemoPage() {
             Neuromorphic
           </a>
           <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.16em] text-neu-200/80">
-            <span className="hidden sm:inline">Local M2 Demo</span>
+            <span className="hidden sm:inline">Demo</span>
             <a
               href="/"
               onClick={stopDemo}
