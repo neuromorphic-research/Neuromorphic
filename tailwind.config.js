@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         display: ["Instrument Serif", "Georgia", "serif"],
+        hero: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
         logo: ["Syne", "DM Sans", "system-ui", "sans-serif"],
         sans: ["DM Sans", "system-ui", "sans-serif"],
         mono: ["IBM Plex Mono", "ui-monospace", "monospace"],

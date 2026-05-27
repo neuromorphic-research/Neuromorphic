@@ -1,19 +1,19 @@
-import { BlogsSection } from "./components/BlogsSection";
-import { ContactSection } from "./components/ContactSection";
-import { CyberneticGridSection } from "./components/CyberneticGridSection";
-import { HeroSection } from "./components/HeroSection";
-import { Navbar } from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import { AboutUs } from "./pages/AboutUs";
+import { Home } from "./pages/Home";
+import { Insights } from "./pages/Insights";
+import { OurStory } from "./pages/OurStory";
+import { Products } from "./pages/Products";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-neu-900">
-      <Navbar />
-      <main>
-        <HeroSection />
-        <CyberneticGridSection />
-        <BlogsSection />
-        <ContactSection />
-      </main>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/our-story" element={<OurStory />} />
+      <Route path="/insights" element={<Insights />} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/about" element={<AboutUs />} />
+      <Route path="*" element={<Home />} />
+    </Routes>
   );
 }
