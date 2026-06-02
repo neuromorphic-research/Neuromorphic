@@ -88,11 +88,13 @@ export function Navbar({ variant = "overlay", tone = "warm" }: NavbarProps) {
                   to={to}
                   className={({ isActive }) =>
                     [
-                      "rounded-md px-3 py-2 transition-[color,background-color,opacity] duration-200",
+                      "relative rounded-md px-3 py-2 transition-[color,background-color,opacity] duration-200",
                       "hover:bg-neu-200/10 hover:text-neu-50",
                       "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neu-200/70",
                       "active:opacity-80",
-                      isActive ? "text-neu-50" : "text-neu-100/85",
+                      isActive
+                        ? "text-neu-50 after:absolute after:inset-x-3 after:-bottom-[7px] after:h-px after:bg-[rgba(220,180,130,0.85)]"
+                        : "text-neu-100/85",
                     ].join(" ")
                   }
                 >
