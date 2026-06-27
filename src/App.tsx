@@ -3,7 +3,7 @@ import { AboutUs } from "./pages/AboutUs";
 import { Home } from "./pages/Home";
 import { Insights } from "./pages/Insights";
 import { OurStory } from "./pages/OurStory";
-import { Products } from "./pages/Products";
+import { Solutions } from "./pages/Solutions";
 
 export default function App() {
   return (
@@ -11,7 +11,8 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/our-story" element={<OurStory />} />
       <Route path="/insights" element={<Insights />} />
-      <Route path="/products" element={<Products />} />
+      <Route path="/solutions" element={<Solutions />} />
+      <Route path="/products" element={<Solutions />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="*" element={<Home />} />
     </Routes>
