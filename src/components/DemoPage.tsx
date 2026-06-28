@@ -1,12 +1,15 @@
 import { useEffect } from "react";
+import posthog from "posthog-js";
 
 const demoUrl = "/local-demo/";
 const stopDemo = () => {
+  posthog.capture("demo_stopped");
   navigator.sendBeacon?.("/stop_demo");
 };
 
 export function DemoPage() {
   useEffect(() => {
+    posthog.capture("demo_viewed");
     window.addEventListener("pagehide", stopDemo);
     return () => {
       window.removeEventListener("pagehide", stopDemo);

@@ -1,3 +1,5 @@
+import posthog from "posthog-js";
+
 const links = [
   { href: "#story", label: "Our Story" },
   { href: "/demo", label: "Demo" },
@@ -27,6 +29,7 @@ export function Navbar() {
             <li key={href}>
               <a
                 href={href}
+                onClick={href === "/demo" ? () => posthog.capture("demo_link_clicked") : undefined}
                 className="rounded-md px-2 py-1.5 text-neu-100/85 transition-[color,background-color,opacity] duration-200 hover:bg-white/[0.06] hover:text-neu-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neu-200 active:opacity-80 md:px-3"
               >
                 {label}

@@ -1,3 +1,4 @@
+import posthog from "posthog-js";
 import { founders } from "../data/founders";
 
 export function ContactSection() {
@@ -39,6 +40,7 @@ export function ContactSection() {
                 {f.email ? (
                   <a
                     href={`mailto:${f.email}`}
+                    onClick={() => posthog.capture("founder_email_clicked", { founder: f.name })}
                     className="break-all font-sans text-sm text-neu-100 underline-offset-2 transition-[color,opacity] duration-200 hover:text-neu-50 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neu-200 active:opacity-80"
                   >
                     {f.email}
@@ -51,6 +53,7 @@ export function ContactSection() {
                     href={f.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => posthog.capture("founder_linkedin_clicked", { founder: f.name })}
                     className="inline-flex items-center justify-center gap-2 rounded-lg border border-neu-400/35 bg-white/[0.04] px-3 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-neu-100 transition-[color,background-color,border-color,transform] duration-200 hover:border-neu-300/55 hover:bg-white/[0.08] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neu-200 active:translate-y-px"
                   >
                     LinkedIn
@@ -61,6 +64,7 @@ export function ContactSection() {
                     href={f.website}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => posthog.capture("founder_website_clicked", { founder: f.name })}
                     className="inline-flex items-center justify-center gap-2 rounded-lg border border-neu-400/35 bg-white/[0.04] px-3 py-2 font-mono text-[11px] uppercase tracking-[0.14em] text-neu-100 transition-[color,background-color,border-color,transform] duration-200 hover:border-neu-300/55 hover:bg-white/[0.08] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neu-200 active:translate-y-px"
                   >
                     Website
