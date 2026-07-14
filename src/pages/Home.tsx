@@ -8,7 +8,7 @@ const ACCENT = "#ea580c";
 
 export function Home() {
   return (
-    <div className="relative flex min-h-screen flex-col overflow-hidden bg-white text-zinc-900">
+    <div className="relative flex h-screen flex-col overflow-hidden bg-white text-zinc-900">
       {/* Blueprint grid background */}
       <div
         aria-hidden
@@ -36,7 +36,7 @@ export function Home() {
       <Navbar variant="overlay" />
 
       {/* ───────────────── HERO ───────────────── */}
-      <main className="relative z-10 flex flex-1 flex-col justify-center px-6 pt-24 md:px-10">
+      <main className="relative z-10 flex min-h-0 flex-1 flex-col justify-center px-6 pt-16 md:px-10">
         <div className="mx-auto w-full max-w-[1400px]">
           <div className="fade-up fade-up-1 inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3.5 py-1.5">
             <span
@@ -49,7 +49,7 @@ export function Home() {
             </span>
           </div>
 
-          <h1 className="fade-up fade-up-2 mt-8 max-w-5xl font-hero text-4xl font-black leading-[1.06] tracking-[-0.035em] text-zinc-900 sm:text-5xl md:text-6xl lg:text-[4.25rem]">
+          <h1 className="fade-up fade-up-2 mt-6 max-w-5xl font-hero text-3xl font-black leading-[1.06] tracking-[-0.035em] text-zinc-900 sm:text-4xl md:text-5xl lg:text-[3.6rem]">
             Self-deploying robot colleagues
             <br />
             for{" "}
@@ -63,7 +63,7 @@ export function Home() {
             </span>
           </h1>
 
-          <p className="fade-up fade-up-3 mt-7 max-w-xl font-sans text-base leading-[1.7] text-zinc-600 md:text-lg">
+          <p className="fade-up fade-up-3 mt-5 max-w-xl font-sans text-sm leading-[1.7] text-zinc-600 md:text-base">
             Neuromorphic builds a fully autonomous robot that deploys itself.
             Direct your fleet from a mobile app, in plain language. No
             deployment engineers, no months of integration.
@@ -72,36 +72,36 @@ export function Home() {
       </main>
 
       {/* ───────────────── BACKED BY / TEAM ───────────────── */}
-      <section className="relative z-10 px-6 pb-14 pt-20 md:px-10">
-        <div className="fade-up fade-up-4 mx-auto flex w-full max-w-[1400px] flex-col gap-10 sm:flex-row sm:items-end sm:justify-between">
+      <section className="relative z-10 px-6 py-5 md:px-10">
+        <div className="fade-up fade-up-4 mx-auto flex w-full max-w-[1400px] flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="font-mono text-[10px] font-medium uppercase tracking-[0.28em] text-zinc-400">
               Backed by
             </p>
-            <div className="mt-4 inline-flex h-14 items-center rounded-lg border border-zinc-200 bg-white px-5 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]">
+            <div className="mt-3 inline-flex h-11 items-center rounded-lg border border-zinc-200 bg-white px-4 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]">
               <img
                 src="/brand/yc-combinator.png"
                 alt="Y Combinator"
-                className="h-6 w-auto select-none object-contain invert"
+                className="h-5 w-auto select-none object-contain invert"
                 draggable={false}
               />
             </div>
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
-            <span className="inline-flex h-14 items-center rounded-lg border border-zinc-200 bg-white px-5 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]">
+            <span className="inline-flex h-11 items-center rounded-lg border border-zinc-200 bg-white px-4 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]">
               <img
                 src="/brand/stanford.png"
                 alt="Stanford University"
-                className="h-10 w-auto select-none object-contain"
+                className="h-8 w-auto select-none object-contain"
                 draggable={false}
               />
             </span>
-            <span className="inline-flex h-14 items-center rounded-lg border border-zinc-200 bg-white px-5 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]">
+            <span className="inline-flex h-11 items-center rounded-lg border border-zinc-200 bg-white px-4 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]">
               <img
                 src="/brand/cambridge.png"
                 alt="University of Cambridge"
-                className="h-8 w-auto select-none object-contain"
+                className="h-6 w-auto select-none object-contain"
                 draggable={false}
               />
             </span>
@@ -111,8 +111,8 @@ export function Home() {
 
       {/* ───────────────── DESIGN PARTNERS CTA ───────────────── */}
       <section className="relative z-10 border-t border-zinc-100 px-6 md:px-10">
-        <div className="fade-up fade-up-5 mx-auto flex w-full max-w-[1400px] flex-col gap-8 py-16 md:py-20 lg:flex-row lg:items-center lg:justify-between lg:gap-14">
-          <h2 className="max-w-4xl font-hero text-3xl font-black leading-[1.12] tracking-[-0.03em] text-zinc-900 sm:text-4xl md:text-5xl">
+        <div className="fade-up fade-up-5 mx-auto flex w-full max-w-[1400px] flex-col gap-5 py-7 md:py-9 lg:flex-row lg:items-center lg:justify-between lg:gap-14">
+          <h2 className="max-w-4xl font-hero text-2xl font-black leading-[1.12] tracking-[-0.03em] text-zinc-900 sm:text-3xl md:text-4xl">
             We are looking for design partners in{" "}
             <span style={{ color: ACCENT }}>
               energy&#8202;/&#8202;construction&#8202;/&#8202;security
@@ -123,7 +123,7 @@ export function Home() {
             href={CONTACT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex shrink-0 items-center gap-2.5 self-start rounded-full bg-zinc-900 px-7 py-3.5 font-sans text-sm font-medium text-white shadow-[0_10px_28px_-10px_rgba(234,88,12,0.45)] transition-[transform,box-shadow,background-color] duration-300 hover:-translate-y-0.5 hover:bg-zinc-800 hover:shadow-[0_16px_38px_-12px_rgba(234,88,12,0.6)] active:translate-y-0 lg:self-auto"
+            className="group inline-flex shrink-0 items-center gap-2.5 self-start rounded-full bg-zinc-900 px-6 py-3 font-sans text-sm font-medium text-white shadow-[0_10px_28px_-10px_rgba(234,88,12,0.45)] transition-[transform,box-shadow,background-color] duration-300 hover:-translate-y-0.5 hover:bg-zinc-800 hover:shadow-[0_16px_38px_-12px_rgba(234,88,12,0.6)] active:translate-y-0 lg:self-auto"
           >
             <span>Get in touch</span>
             <span
@@ -139,52 +139,47 @@ export function Home() {
 
       {/* ───────────────── FOOTER ───────────────── */}
       <footer className="relative z-10 border-t border-zinc-200 bg-zinc-50">
-        <div className="mx-auto w-full max-w-[1400px] px-6 py-10 md:px-10">
-          <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
-            <div className="flex items-center gap-3">
-              <img
-                src="/brand/neuromorphic-logo.png"
-                alt=""
-                aria-hidden
-                className="h-8 w-8 select-none"
-                draggable={false}
-              />
-              <span className="font-logo text-[13px] font-semibold uppercase tracking-[0.32em] text-zinc-900">
-                Neuromorphic
-              </span>
-            </div>
-
-            <div className="flex flex-wrap items-center gap-3">
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
-                className="inline-flex items-center rounded-lg border border-zinc-200 bg-white px-4 py-2.5 font-sans text-sm text-zinc-600 transition-[background-color,border-color,color] duration-200 hover:border-[rgba(234,88,12,0.45)] hover:text-zinc-900"
-              >
-                {CONTACT_EMAIL}
-              </a>
-              <a
-                href={LINKEDIN_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg border border-zinc-200 bg-white px-4 py-2.5 font-sans text-sm text-zinc-600 transition-[background-color,border-color,color] duration-200 hover:border-[rgba(234,88,12,0.45)] hover:text-zinc-900"
-              >
-                <span>LinkedIn</span>
-                <span
-                  aria-hidden
-                  className="font-mono text-[13px] leading-none"
-                  style={{ color: "rgba(234,88,12,0.8)" }}
-                >
-                  ↗
-                </span>
-              </a>
-            </div>
-          </div>
-
-          <div className="mt-8 flex flex-col items-start justify-between gap-3 border-t border-zinc-200 pt-6 font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-400 sm:flex-row sm:items-center">
-            <p>© {new Date().getFullYear()} Neuromorphic</p>
-            <p>
+        <div className="mx-auto flex w-full max-w-[1400px] flex-wrap items-center justify-between gap-x-6 gap-y-3 px-6 py-4 md:px-10">
+          <div className="flex items-center gap-3">
+            <img
+              src="/brand/neuromorphic-logo.png"
+              alt=""
+              aria-hidden
+              className="h-6 w-6 select-none"
+              draggable={false}
+            />
+            <span className="font-logo text-[12px] font-semibold uppercase tracking-[0.32em] text-zinc-900">
+              Neuromorphic
+            </span>
+            <span className="hidden font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-400 md:inline">
+              © {new Date().getFullYear()} ·{" "}
               <span style={{ color: "rgba(234,88,12,0.75)" }}>YC S26</span> ·
               Cambridge / SF
-            </p>
+            </span>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="inline-flex items-center rounded-lg border border-zinc-200 bg-white px-3.5 py-1.5 font-sans text-[13px] text-zinc-600 transition-[background-color,border-color,color] duration-200 hover:border-[rgba(234,88,12,0.45)] hover:text-zinc-900"
+            >
+              {CONTACT_EMAIL}
+            </a>
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-zinc-200 bg-white px-3.5 py-1.5 font-sans text-[13px] text-zinc-600 transition-[background-color,border-color,color] duration-200 hover:border-[rgba(234,88,12,0.45)] hover:text-zinc-900"
+            >
+              <span>LinkedIn</span>
+              <span
+                aria-hidden
+                className="font-mono text-[13px] leading-none"
+                style={{ color: "rgba(234,88,12,0.8)" }}
+              >
+                ↗
+              </span>
+            </a>
           </div>
         </div>
       </footer>
