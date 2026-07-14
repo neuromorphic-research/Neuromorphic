@@ -36,7 +36,7 @@ export function Home() {
       <Navbar variant="overlay" />
 
       {/* ───────────────── HERO ───────────────── */}
-      <main className="relative z-10 flex min-h-0 flex-1 flex-col justify-center px-6 pt-16 md:px-10">
+      <main className="relative z-10 flex min-h-0 flex-1 flex-col justify-center px-6 pt-[clamp(3.5rem,9vh,4.5rem)] md:px-10">
         <div className="mx-auto w-full max-w-[1400px]">
           <div className="fade-up fade-up-1 inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-50 px-3.5 py-1.5">
             <span
@@ -49,7 +49,7 @@ export function Home() {
             </span>
           </div>
 
-          <h1 className="fade-up fade-up-2 mt-6 max-w-5xl font-hero text-3xl font-black leading-[1.06] tracking-[-0.035em] text-zinc-900 sm:text-4xl md:text-5xl lg:text-[3.6rem]">
+          <h1 className="fade-up fade-up-2 mt-[clamp(0.75rem,2.5vh,1.5rem)] max-w-5xl font-hero text-[clamp(1.5rem,min(6.5vh,4vw),3.6rem)] font-black leading-[1.06] tracking-[-0.035em] text-zinc-900">
             Self-deploying robot colleagues
             <br />
             for{" "}
@@ -63,7 +63,7 @@ export function Home() {
             </span>
           </h1>
 
-          <p className="fade-up fade-up-3 mt-5 max-w-xl font-sans text-sm leading-[1.7] text-zinc-600 md:text-base">
+          <p className="fade-up fade-up-3 mt-[clamp(0.5rem,2vh,1.25rem)] max-w-xl font-sans text-[clamp(0.8rem,1.8vh,1rem)] leading-[1.7] text-zinc-600">
             Neuromorphic builds a fully autonomous robot that deploys itself.
             Direct your fleet from a mobile app, in plain language. No
             deployment engineers, no months of integration.
@@ -72,7 +72,7 @@ export function Home() {
       </main>
 
       {/* ───────────────── BACKED BY / TEAM ───────────────── */}
-      <section className="relative z-10 px-6 py-5 md:px-10">
+      <section className="relative z-10 px-6 py-[clamp(0.6rem,2vh,1.25rem)] md:px-10">
         <div className="fade-up fade-up-4 mx-auto flex w-full max-w-[1400px] flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="font-mono text-[10px] font-medium uppercase tracking-[0.28em] text-zinc-400">
@@ -111,8 +111,8 @@ export function Home() {
 
       {/* ───────────────── DESIGN PARTNERS CTA ───────────────── */}
       <section className="relative z-10 border-t border-zinc-100 px-6 md:px-10">
-        <div className="fade-up fade-up-5 mx-auto flex w-full max-w-[1400px] flex-col gap-5 py-7 md:py-9 lg:flex-row lg:items-center lg:justify-between lg:gap-14">
-          <h2 className="max-w-4xl font-hero text-2xl font-black leading-[1.12] tracking-[-0.03em] text-zinc-900 sm:text-3xl md:text-4xl">
+        <div className="fade-up fade-up-5 mx-auto flex w-full max-w-[1400px] flex-col gap-5 py-[clamp(1rem,3.2vh,2.25rem)] lg:flex-row lg:items-center lg:justify-between lg:gap-14">
+          <h2 className="max-w-4xl font-hero text-[clamp(1.2rem,min(4vh,2.4vw),2.25rem)] font-black leading-[1.12] tracking-[-0.03em] text-zinc-900">
             We are looking for design partners in{" "}
             <span style={{ color: ACCENT }}>
               energy&#8202;/&#8202;construction&#8202;/&#8202;security
