@@ -7,61 +7,119 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-neu-900 text-neu-100 antialiased;
+    @apply bg-white text-zinc-900 antialiased;
     font-feature-settings: "kern" 1, "liga" 1;
   }
 }
 
-@keyframes nav-shimmer {
-  0% {
-    transform: translate3d(-60%, 0, 0);
+/* ── Entrance: gentle fade + rise ───────────────────────────── */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
   }
-  100% {
-    transform: translate3d(160%, 0, 0);
-  }
-}
-
-@keyframes nav-hairline-pulse {
-  0%,
-  100% {
-    opacity: 0.55;
-  }
-  50% {
-    opacity: 0.95;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.nav-shimmer {
-  animation: nav-shimmer 9s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-  will-change: transform;
-}
-
-.nav-hairline {
-  animation: nav-hairline-pulse 6s ease-in-out infinite;
-  will-change: opacity;
-}
-
-/* ── Model orb glow ─────────────────────────────────────────── */
-@keyframes orb-pulse {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 0.45;
-  }
-  50% {
-    transform: scale(1.06);
-    opacity: 0.7;
-  }
-}
-.orb-pulse {
-  animation: orb-pulse 8s ease-in-out infinite;
+.fade-up {
+  opacity: 0;
+  animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
   will-change: transform, opacity;
 }
 
+.fade-up-1 {
+  animation-delay: 0.08s;
+}
+.fade-up-2 {
+  animation-delay: 0.18s;
+}
+.fade-up-3 {
+  animation-delay: 0.28s;
+}
+.fade-up-4 {
+  animation-delay: 0.42s;
+}
+.fade-up-5 {
+  animation-delay: 0.56s;
+}
+
+/* ── Navbar: slide-down entrance ────────────────────────────── */
+@keyframes nav-drop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-drop {
+  animation: nav-drop 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  will-change: transform, opacity;
+}
+
+/* ── Navbar: sheen sweeping along the bottom hairline ───────── */
+@keyframes nav-sheen {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+.nav-sheen {
+  animation: nav-sheen 5.5s cubic-bezier(0.45, 0, 0.55, 1) 1.2s infinite;
+  will-change: transform;
+}
+
+/* ── Soft breathing dot for the badge ───────────────────────── */
+@keyframes dot-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.55;
+  }
+}
+
+.dot-breathe {
+  animation: dot-breathe 2.8s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* ── Accent underline that draws itself in ──────────────────── */
+@keyframes underline-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.underline-grow {
+  transform-origin: left;
+  animation: underline-grow 1s cubic-bezier(0.22, 1, 0.36, 1) 0.7s both;
+  will-change: transform;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .nav-shimmer,
-  .nav-hairline,
-  .orb-pulse {
+  .fade-up,
+  .dot-breathe,
+  .underline-grow,
+  .nav-drop,
+  .nav-sheen {
     animation: none;
+    opacity: 1;
+    transform: none;
   }
 }
