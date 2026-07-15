@@ -105,6 +105,30 @@ export function Home() {
                 draggable={false}
               />
             </span>
+            <span className="inline-flex h-11 items-center rounded-lg border border-zinc-200 bg-white px-4 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]">
+              <img
+                src="/brand/jnj.png"
+                alt="Johnson & Johnson"
+                className="h-7 w-auto select-none object-contain"
+                draggable={false}
+              />
+            </span>
+            <span className="inline-flex h-11 items-center rounded-lg border border-zinc-200 bg-white px-4 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]">
+              <img
+                src="/brand/hyundai.png"
+                alt="Hyundai"
+                className="h-8 w-auto select-none object-contain"
+                draggable={false}
+              />
+            </span>
+            <span className="inline-flex h-11 items-center rounded-lg border border-zinc-200 bg-white px-4 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]">
+              <img
+                src="/brand/rapyuta.png"
+                alt="Rapyuta Robotics"
+                className="h-9 w-auto select-none object-contain"
+                draggable={false}
+              />
+            </span>
           </div>
         </div>
       </section>
