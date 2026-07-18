@@ -494,6 +494,20 @@ export function Home() {
               <span style={{ color: "rgba(234,88,12,0.75)" }}>YC S26</span> ·
               Cambridge / SF
             </span>
+            <span className="hidden items-center gap-4 md:inline-flex">
+              <Link
+                to="/privacy"
+                className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-400 transition-colors duration-200 hover:text-zinc-900"
+              >
+                Privacy
+              </Link>
+              <Link
+                to="/terms"
+                className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-400 transition-colors duration-200 hover:text-zinc-900"
+              >
+                Terms
+              </Link>
+            </span>
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
@@ -520,11 +534,25 @@ export function Home() {
             </a>
           </div>
 
-          <p className="w-full font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-400 md:hidden">
-            © {new Date().getFullYear()} ·{" "}
-            <span style={{ color: "rgba(234,88,12,0.75)" }}>YC S26</span> ·
-            Cambridge / SF
-          </p>
+          <div className="flex w-full flex-wrap items-center gap-x-4 gap-y-1 md:hidden">
+            <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-400">
+              © {new Date().getFullYear()} ·{" "}
+              <span style={{ color: "rgba(234,88,12,0.75)" }}>YC S26</span> ·
+              Cambridge / SF
+            </p>
+            <Link
+              to="/privacy"
+              className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-400 transition-colors duration-200 hover:text-zinc-900"
+            >
+              Privacy
+            </Link>
+            <Link
+              to="/terms"
+              className="font-mono text-[10px] uppercase tracking-[0.24em] text-zinc-400 transition-colors duration-200 hover:text-zinc-900"
+            >
+              Terms
+            </Link>
+          </div>
         </div>
       </footer>
     </div>

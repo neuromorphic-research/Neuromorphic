@@ -242,8 +242,11 @@ async function callClaude(apiKey, system, userContent) {
   });
 
   if (!response.ok) {
+    // Log the upstream detail server-side only; never let it reach the client,
+    // since Anthropic error bodies can echo request metadata.
     const detail = await response.text();
-    throw new Error(`Anthropic API ${response.status}: ${detail.slice(0, 300)}`);
+    console.error(`Anthropic API ${response.status}:`, detail.slice(0, 300));
+    throw new Error(`Anthropic API returned ${response.status}`);
   }
 
   const data = await response.json();
@@ -266,7 +269,13 @@ export default async function handler(req, res) {
     return;
   }
 
-  const body = typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body || {};
+  let body;
+  try {
+    body = typeof req.body === "string" ? JSON.parse(req.body || "{}") : req.body || {};
+  } catch {
+    res.status(400).json({ error: "Invalid request body." });
+    return;
+  }
   const { stage, industry, description, answers } = body;
 
   try {

@@ -212,6 +212,17 @@ export function RoiCalculator() {
               placeholder="e.g. We run 3 solar farms and technicians drive out daily to inspect panels and perimeter fencing. Each visit takes half a day and incidents like panel faults often go unnoticed for a week..."
               className="mt-3 w-full resize-y rounded-xl border border-zinc-200 bg-white p-4 font-sans text-sm leading-[1.7] text-zinc-900 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.06)] outline-none transition-colors duration-200 placeholder:text-zinc-400 focus:border-[rgba(234,88,12,0.5)]"
             />
+            <p className="mt-2 font-sans text-xs leading-[1.6] text-zinc-400">
+              Your description is used only to generate this estimate and
+              isn't stored. See our{" "}
+              <Link
+                to="/privacy"
+                className="underline underline-offset-4 hover:text-zinc-700"
+              >
+                Privacy Policy
+              </Link>
+              .
+            </p>
 
             <button
               type="button"
@@ -451,12 +462,24 @@ export function RoiCalculator() {
           </p>
         )}
 
-        <p className="mt-14 font-sans text-xs text-zinc-400">
+        <p className="mt-14 flex flex-wrap items-center gap-x-5 gap-y-2 font-sans text-xs text-zinc-400">
           <Link
             to="/"
             className="underline-offset-4 hover:text-zinc-700 hover:underline"
           >
             ← Back to home
+          </Link>
+          <Link
+            to="/privacy"
+            className="underline-offset-4 hover:text-zinc-700 hover:underline"
+          >
+            Privacy
+          </Link>
+          <Link
+            to="/terms"
+            className="underline-offset-4 hover:text-zinc-700 hover:underline"
+          >
+            Terms
           </Link>
         </p>
       </main>
