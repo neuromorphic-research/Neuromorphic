@@ -70,11 +70,11 @@ const INDUSTRIES = [
 ];
 
 const LOGOS = [
-  { src: "/brand/stanford.png", alt: "Stanford University", h: "h-8" },
-  { src: "/brand/cambridge.png", alt: "University of Cambridge", h: "h-6" },
-  { src: "/brand/jnj.png", alt: "Johnson & Johnson", h: "h-7" },
-  { src: "/brand/hyundai.png", alt: "Hyundai", h: "h-8" },
-  { src: "/brand/rapyuta.png", alt: "Rapyuta Robotics", h: "h-9" },
+  { src: "/brand/stanford.png", alt: "Stanford University", h: "h-10" },
+  { src: "/brand/cambridge.png", alt: "University of Cambridge", h: "h-8" },
+  { src: "/brand/jnj.png", alt: "Johnson & Johnson", h: "h-9" },
+  { src: "/brand/hyundai.png", alt: "Hyundai", h: "h-10" },
+  { src: "/brand/rapyuta.png", alt: "Rapyuta Robotics", h: "h-12" },
 ];
 
 function SectionLabel({ children }: { children: string }) {
@@ -215,11 +215,11 @@ export function Home() {
           <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <SectionLabel>Backed by</SectionLabel>
-              <div className="mt-3 inline-flex h-11 items-center rounded-lg border border-zinc-200 bg-white px-4 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]">
+              <div className="mt-3 inline-flex h-14 items-center rounded-lg border border-zinc-200 bg-white px-5 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]">
                 <img
                   src="/brand/yc-combinator.png"
                   alt="Y Combinator"
-                  className="h-5 w-auto select-none object-contain invert"
+                  className="h-6 w-auto select-none object-contain invert"
                   draggable={false}
                 />
               </div>
@@ -228,7 +228,7 @@ export function Home() {
               {LOGOS.map((logo) => (
                 <span
                   key={logo.alt}
-                  className="inline-flex h-11 items-center rounded-lg border border-zinc-200 bg-white px-4 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]"
+                  className="inline-flex h-14 items-center rounded-lg border border-zinc-200 bg-white px-5 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]"
                 >
                   <img
                     src={logo.src}
