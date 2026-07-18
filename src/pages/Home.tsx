@@ -145,11 +145,12 @@ export function Home() {
               </span>
             </div>
 
-            <h1 className="fade-up fade-up-2 mt-7 font-hero text-[1.9rem] font-black leading-[1.12] tracking-[-0.035em] text-zinc-900 sm:text-[2.75rem] sm:leading-[1.1] lg:text-[3rem]">
-              Deploy Autonomous Robots{" "}
-              <br className="hidden sm:block" />
-              to{" "}
-              <span className="relative inline-block sm:whitespace-nowrap" style={{ color: ACCENT }}>
+            <h1
+              className="fade-up fade-up-2 mt-7 font-hero text-[1.9rem] font-black leading-[1.12] tracking-[-0.035em] text-zinc-900 sm:text-[2.75rem] sm:leading-[1.1] lg:text-[3rem]"
+              style={{ textWrap: "balance" }}
+            >
+              Deploy Autonomous Robots to&nbsp;
+              <span className="relative inline-block" style={{ color: ACCENT }}>
                 Any Industrial Facility
                 <span
                   aria-hidden
