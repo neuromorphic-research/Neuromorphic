@@ -225,20 +225,23 @@ export function Home() {
                 />
               </div>
             </div>
-            <div className="flex flex-wrap items-center gap-3">
-              {LOGOS.map((logo) => (
-                <span
-                  key={logo.alt}
-                  className="inline-flex h-14 items-center rounded-lg border border-zinc-200 bg-white px-5 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]"
-                >
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className={`${logo.h} w-auto select-none object-contain`}
-                    draggable={false}
-                  />
-                </span>
-              ))}
+            <div>
+              <SectionLabel>Experience from</SectionLabel>
+              <div className="mt-3 flex flex-wrap items-center gap-3">
+                {LOGOS.map((logo) => (
+                  <span
+                    key={logo.alt}
+                    className="inline-flex h-14 items-center rounded-lg border border-zinc-200 bg-white px-5 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.08)]"
+                  >
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className={`${logo.h} w-auto select-none object-contain`}
+                      draggable={false}
+                    />
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -324,44 +327,10 @@ export function Home() {
             </h2>
             <p className="mt-4 max-w-xl font-sans text-sm leading-[1.7] text-zinc-600 md:text-base">
               No capital expense, no integration project. Rent your robotic
-              workforce on a simple monthly subscription.
+              workforce on a simple monthly subscription. From $5–10k per
+              robot per month depending on body and logistics — hardware,
+              software, monitoring and support included.
             </p>
-          </div>
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
-            <div className="reveal rounded-2xl border border-zinc-200 bg-white p-6 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.06)]">
-              <p className="font-hero text-3xl font-black tracking-[-0.02em]" style={{ color: ACCENT }}>
-                $0
-              </p>
-              <h3 className="mt-2 font-hero text-base font-black tracking-[-0.02em]">
-                Deployment cost
-              </h3>
-              <p className="mt-2 font-sans text-sm leading-[1.7] text-zinc-600">
-                We handle delivery, setup and facility introduction at no
-                charge.
-              </p>
-            </div>
-            <div className="reveal reveal-d1 rounded-2xl border border-zinc-200 bg-white p-6 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.06)]">
-              <p className="font-hero text-3xl font-black tracking-[-0.02em]" style={{ color: ACCENT }}>
-                $5–10k
-              </p>
-              <h3 className="mt-2 font-hero text-base font-black tracking-[-0.02em]">
-                Per robot, per month
-              </h3>
-              <p className="mt-2 font-sans text-sm leading-[1.7] text-zinc-600">
-                Depending on the robot body and logistics. Cancel anytime.
-              </p>
-            </div>
-            <div className="reveal reveal-d2 rounded-2xl border border-zinc-200 bg-white p-6 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.06)]">
-              <p className="font-hero text-3xl font-black tracking-[-0.02em]" style={{ color: ACCENT }}>
-                All-in
-              </p>
-              <h3 className="mt-2 font-hero text-base font-black tracking-[-0.02em]">
-                One subscription
-              </h3>
-              <p className="mt-2 font-sans text-sm leading-[1.7] text-zinc-600">
-                Hardware, software, monitoring, support and updates included.
-              </p>
-            </div>
           </div>
         </div>
       </section>
