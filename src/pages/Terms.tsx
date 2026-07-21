@@ -51,22 +51,10 @@ export function Terms() {
             professional advice, or a guarantee of any outcome.
           </p>
 
-          <SectionHeading>ROI estimates</SectionHeading>
-          <p className="mt-3">
-            The ROI calculator produces representative, non-binding estimates
-            generated from the inputs you provide and typical industry
-            benchmarks. Estimates are provided "as is", without warranty of
-            any kind, and actual results will vary by site, operation, and
-            deployment. Do not rely on the estimates as the sole basis for
-            business decisions.
-          </p>
-
           <SectionHeading>Acceptable use</SectionHeading>
           <p className="mt-3">
-            You agree not to submit unlawful, harmful, or irrelevant content
-            to the calculator, not to attempt to disrupt or overload the
-            service, and not to use it for any purpose other than evaluating
-            robotics deployments. Rate limits apply, and we may restrict
+            You agree not to attempt to disrupt, overload, or misuse this
+            site, and to use it only for lawful purposes. We may restrict
             access in case of abuse.
           </p>
 
@@ -82,9 +70,8 @@ export function Terms() {
           <p className="mt-3">
             To the maximum extent permitted by law, Neuromorphic is not liable
             for any indirect, incidental, or consequential loss arising from
-            your use of this site or reliance on its content, including the
-            ROI estimates. Nothing in these terms excludes liability that
-            cannot be excluded by law.
+            your use of this site or reliance on its content. Nothing in
+            these terms excludes liability that cannot be excluded by law.
           </p>
 
           <SectionHeading>Governing law</SectionHeading>

@@ -59,22 +59,10 @@ export function Privacy() {
 
           <SectionHeading>What data we process</SectionHeading>
           <p className="mt-3">
-            We keep data processing to a minimum. The site involves four kinds
-            of processing:
+            We keep data processing to a minimum. The site involves three
+            kinds of processing:
           </p>
           <ul className="mt-3 list-disc space-y-2.5 pl-5">
-            <li>
-              <span className="font-medium text-zinc-800">
-                ROI calculator inputs.
-              </span>{" "}
-              When you use our ROI calculator, the industry you select, the
-              use-case description you type, and the numbers you enter are
-              transmitted to Anthropic PBC (US), which acts as our processor
-              to generate the estimate. Under Anthropic's API terms, this data
-              is not used by Anthropic to train its models. We do not store
-              your inputs on our servers — they are used only to produce the
-              estimate shown to you.
-            </li>
             <li>
               <span className="font-medium text-zinc-800">
                 Contact and booking data.
@@ -111,15 +99,15 @@ export function Privacy() {
           <p className="mt-3">
             Where the GDPR applies, we rely on Art. 6(1)(b) GDPR (performance
             of a contract or pre-contractual steps taken at your request) for
-            processing your ROI calculator inputs and booking requests, and
-            Art. 6(1)(f) GDPR (legitimate interest) for hosting, security, and
+            processing your booking requests and correspondence, and Art.
+            6(1)(f) GDPR (legitimate interest) for hosting, security, and
             keeping the site running reliably.
           </p>
 
           <SectionHeading>International transfers</SectionHeading>
           <p className="mt-3">
-            Our providers (Anthropic, Vercel, cal.com, Google) are based in or
-            process data in the United States. Where personal data is
+            Our providers (Vercel, cal.com, Google) are based in or process
+            data in the United States. Where personal data is
             transferred outside the UK/EEA, transfers are safeguarded by
             standard contractual clauses and/or the EU–US Data Privacy
             Framework, as applicable to each provider.
@@ -127,9 +115,8 @@ export function Privacy() {
 
           <SectionHeading>Retention</SectionHeading>
           <p className="mt-3">
-            We do not store ROI calculator inputs. Email correspondence and
-            booking details are kept only as long as needed to handle your
-            enquiry and any resulting relationship.
+            Email correspondence and booking details are kept only as long as
+            needed to handle your enquiry and any resulting relationship.
           </p>
 
           <SectionHeading>Your rights</SectionHeading>

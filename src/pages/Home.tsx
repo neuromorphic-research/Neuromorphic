@@ -420,12 +420,6 @@ export function Home() {
             </p>
           </div>
           <div className="flex shrink-0 flex-wrap items-center gap-3">
-            <Link
-              to="/roi"
-              className="inline-flex items-center gap-2 rounded-full border border-zinc-300 bg-white px-6 py-3 font-sans text-sm font-medium text-zinc-700 transition-[border-color,color,transform] duration-300 hover:-translate-y-0.5 hover:border-[rgba(234,88,12,0.5)] hover:text-zinc-900"
-            >
-              Estimate your ROI
-            </Link>
             <a
               href={CONTACT_URL}
               target="_blank"
